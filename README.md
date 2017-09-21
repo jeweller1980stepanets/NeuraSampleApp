@@ -2,7 +2,7 @@
 
 ## Usage
 
-git clone ttps://github.com/jeweller1980stepanets/NeuraSampleApp
+git clone https://github.com/jeweller1980stepanets/NeuraSampleApp
 
 cordova build android
 
