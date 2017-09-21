@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/drawable-ldpi-v4/neura_sdk_ic_running_mode_notific.png",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/drawable-ldpi-v4/neura_sdk_ic_running_mode_notific.png"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/drawable-ldpi-v4/neura_sdk_ic_play.png",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/drawable-ldpi-v4/neura_sdk_ic_play.png"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/drawable-ldpi-v4/neura_sdk_ic_pause.png",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/drawable-ldpi-v4/neura_sdk_ic_pause.png"
+    }
+]

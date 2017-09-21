@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/raw/neura_sdk_aileron_light.otf",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/raw/neura_sdk_aileron_light.otf"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/raw/neura_sdk_aileron_thin.otf",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/raw/neura_sdk_aileron_thin.otf"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/raw/neura_sdk_roboto_light.ttf",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/raw/neura_sdk_roboto_light.ttf"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/raw/neura_sdk_roboto_medium.ttf",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/raw/neura_sdk_roboto_medium.ttf"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/raw/neura_sdk_roboto_regular.ttf",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.theneura/android-sdk/4.3.0(RC2-alpha)/res/raw/neura_sdk_roboto_regular.ttf"
+    }
+]
