@@ -52,8 +52,8 @@
             <state relative-caret-position="0">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <marker date="1506003998000" expanded="true" signature="8919:8958" ph="{...}" />
-                <marker date="1506003998000" expanded="true" signature="8920:8958" ph="{...}" />
+                <marker date="1506004601000" expanded="true" signature="8919:8958" ph="{...}" />
+                <marker date="1506004601000" expanded="true" signature="8920:8958" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -74,8 +74,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/www/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -1861,7 +1861,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6023470197000" />
+        <entry key="$PROJECT_DIR$" value="6023471403000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2928,8 +2928,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1506003998000" expanded="true" signature="8919:8958" ph="{...}" />
-            <marker date="1506003998000" expanded="true" signature="8920:8958" ph="{...}" />
+            <marker date="1506004601000" expanded="true" signature="8919:8958" ph="{...}" />
+            <marker date="1506004601000" expanded="true" signature="8920:8958" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -3080,8 +3080,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1506003998000" expanded="true" signature="8919:8958" ph="{...}" />
-            <marker date="1506003998000" expanded="true" signature="8920:8958" ph="{...}" />
+            <marker date="1506004601000" expanded="true" signature="8919:8958" ph="{...}" />
+            <marker date="1506004601000" expanded="true" signature="8920:8958" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -3311,8 +3311,8 @@
         <state relative-caret-position="0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <marker date="1506003998000" expanded="true" signature="8919:8958" ph="{...}" />
-            <marker date="1506003998000" expanded="true" signature="8920:8958" ph="{...}" />
+            <marker date="1506004601000" expanded="true" signature="8919:8958" ph="{...}" />
+            <marker date="1506004601000" expanded="true" signature="8920:8958" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -3409,8 +3409,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
           <folding />
         </state>
       </provider>

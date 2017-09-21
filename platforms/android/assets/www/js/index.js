@@ -458,4 +458,3 @@ var simulateAnEvent = function() {
 };
 
 app.initialize();
-

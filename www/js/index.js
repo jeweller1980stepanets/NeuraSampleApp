@@ -1,3 +1,4 @@
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -35,79 +36,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-		document.getElementById("authenticate").addEventListener("click", authenticate);
-		document.getElementById("forgetMe").addEventListener("click", forgetMe);
-		document.getElementById("getSubscriptions").addEventListener("click", getSubscriptions);
-		document.getElementById("subscribeLeftHome").addEventListener("click", subscribeLeftHome);
-		document.getElementById("subscribeLeftWork").addEventListener("click", subscribeLeftWork);
-		document.getElementById("unsubscribeLeftHome").addEventListener("click", unsubscribeLeftHome);
-		document.getElementById("unsubscribeLeftWork").addEventListener("click", unsubscribeLeftWork);
-		document.getElementById("shouldSubscribeUserPhone").addEventListener("click", shouldSubscribeUserPhone);
-		document.getElementById("shouldSubscribeLeftWork").addEventListener("click", shouldSubscribeLeftWork);
-		document.getElementById("getAppPermissions").addEventListener("click", getAppPermissions);
-		document.getElementById("getPermissionStatus").addEventListener("click", getPermissionStatus);
-		document.getElementById("enableLogFile").addEventListener("click", enableLogFile);
-		document.getElementById("enableAutomaticallySyncLogs").addEventListener("click", enableAutomaticallySyncLogs);
-		document.getElementById("enableNeuraHandingStateAlertMessages").addEventListener("click", enableNeuraHandingStateAlertMessages);
-		document.getElementById("getSdkVersion").addEventListener("click", getSdkVersion);
-		document.getElementById("isMissingDataForEvent").addEventListener("click", isMissingDataForEvent);
-		document.getElementById("getMissingDataForEvent").addEventListener("click", getMissingDataForEvent);
-		document.getElementById("getKnownDevices").addEventListener("click", getKnownDevices);
-		document.getElementById("getKnownCapabilities").addEventListener("click", getKnownCapabilities);
-		document.getElementById("hasDeviceWithCapability").addEventListener("click", hasDeviceWithCapability);
-		document.getElementById("addDevice").addEventListener("click", addDevice);
-		document.getElementById("addDeviceByCapabilities").addEventListener("click", addDeviceByCapabilities);
-		document.getElementById("addDeviceByName").addEventListener("click", addDeviceByName);
-		document.getElementById("getUserDetails").addEventListener("click", getUserDetails);
-		document.getElementById("getUserPhone").addEventListener("click", getUserPhone);
-		document.getElementById("getUserSituation").addEventListener("click", getUserSituation);
-		document.getElementById("simulateAnEvent").addEventListener("click", simulateAnEvent);
-
-        var success = function() {
-        	output('Neura init success');
-
-        	var push = PushNotification.init({
-                android: {
-                    senderID: "904777039558"
-                }
-            });
-
-            push.on('registration', function(data) {
-                output("push.on.registration: [" + data.registrationId + "]");
-                registerNeuraEvents();
-            });
-
-            push.on('error', function(e) {
-                output("push.on.error: [" + e.message + "]");
-            });
-
-            push.on('notification', function(data) {
-                output("push.on.notification: [" + JSON.stringify(data) + "]");
-            });
-	    }
-
-	    var failure = function(errorCode) {
-	    	output('Neura init failed [' + errorCode + ']');
-	    }
-
-		neura.init("c532adf109730db39b6600b8574035f316a62be5e223dd5524fc17bb96f88c27", "1da1870dad66f1028fb68a7bba70164546852c95b7e81d3bc525fa6b40d541b1", success, failure);
-
-
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    }
-};
-
-app.initialize();
+var neura = window.cordova.plugins.neura;
 
 var output = function(message) {
     console.log(message);
@@ -127,7 +56,7 @@ var authenticate = function() {
     // (replace APP_UID with your app UID):
     // https://dev.theneura.com/console/edit/APP_UID
     // Go to "Permissions", scroll all the way down and paste the list of permissions
-	neura.authenticate({"userLeftWork", "userLeftHome", "userPhoneNumber", "userDetails", "userSituation"}, success, failure);
+	neura.authenticate(["userLeftWork", "userLeftHome", "userPhoneNumber", "userDetails", "userSituation"],'+380935524937', success, failure);
 }
 
 var registerNeuraEvents = function() {
@@ -453,3 +382,79 @@ var simulateAnEvent = function() {
 
 	neura.simulateAnEvent(success, failure);
 }
+
+
+		document.getElementById("authenticate").addEventListener("click", authenticate);
+		document.getElementById("forgetMe").addEventListener("click", forgetMe);
+		document.getElementById("getSubscriptions").addEventListener("click", getSubscriptions);
+		document.getElementById("subscribeLeftHome").addEventListener("click", subscribeLeftHome);
+		document.getElementById("subscribeLeftWork").addEventListener("click", subscribeLeftWork);
+		document.getElementById("unsubscribeLeftHome").addEventListener("click", unsubscribeLeftHome);
+		document.getElementById("unsubscribeLeftWork").addEventListener("click", unsubscribeLeftWork);
+		document.getElementById("shouldSubscribeUserPhone").addEventListener("click", shouldSubscribeUserPhone);
+		document.getElementById("shouldSubscribeLeftWork").addEventListener("click", shouldSubscribeLeftWork);
+		document.getElementById("getAppPermissions").addEventListener("click", getAppPermissions);
+		document.getElementById("getPermissionStatus").addEventListener("click", getPermissionStatus);
+		document.getElementById("enableLogFile").addEventListener("click", enableLogFile);
+		document.getElementById("enableAutomaticallySyncLogs").addEventListener("click", enableAutomaticallySyncLogs);
+		document.getElementById("enableNeuraHandingStateAlertMessages").addEventListener("click", enableNeuraHandingStateAlertMessages);
+		document.getElementById("getSdkVersion").addEventListener("click", getSdkVersion);
+		document.getElementById("isMissingDataForEvent").addEventListener("click", isMissingDataForEvent);
+		document.getElementById("getMissingDataForEvent").addEventListener("click", getMissingDataForEvent);
+		document.getElementById("getKnownDevices").addEventListener("click", getKnownDevices);
+		document.getElementById("getKnownCapabilities").addEventListener("click", getKnownCapabilities);
+		document.getElementById("hasDeviceWithCapability").addEventListener("click", hasDeviceWithCapability);
+		document.getElementById("addDevice").addEventListener("click", addDevice);
+		document.getElementById("addDeviceByCapabilities").addEventListener("click", addDeviceByCapabilities);
+		document.getElementById("addDeviceByName").addEventListener("click", addDeviceByName);
+		document.getElementById("getUserDetails").addEventListener("click", getUserDetails);
+		document.getElementById("getUserPhone").addEventListener("click", getUserPhone);
+		document.getElementById("getUserSituation").addEventListener("click", getUserSituation);
+		document.getElementById("simulateAnEvent").addEventListener("click", simulateAnEvent);
+
+
+        var success = function() {
+        	output('Neura init success');
+
+        	var push = PushNotification.init({
+                android: {
+                    senderID: "904777039558"
+                }
+            });
+
+            push.on('registration', function(data) {
+                output("push.on.registration: [" + data.registrationId + "]");
+                registerNeuraEvents();
+            });
+
+            push.on('error', function(e) {
+                output("push.on.error: [" + e.message + "]");
+            });
+
+            push.on('notification', function(data) {
+                output("push.on.notification: [" + JSON.stringify(data) + "]");
+            });
+	    }
+
+	    var failure = function(errorCode) {
+	    	output('Neura init failed [' + errorCode + ']');
+	    }
+
+		neura.init("c532adf109730db39b6600b8574035f316a62be5e223dd5524fc17bb96f88c27", "1da1870dad66f1028fb68a7bba70164546852c95b7e81d3bc525fa6b40d541b1", success, failure);
+
+
+    },
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+    }
+};
+
+app.initialize();
