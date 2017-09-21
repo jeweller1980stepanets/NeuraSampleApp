@@ -7,13 +7,22 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.neura"
         ]
+    },
+    {
+        "id": "phonegap-plugin-push.PushNotification",
+        "file": "plugins/phonegap-plugin-push/www/push.js",
+        "pluginId": "phonegap-plugin-push",
+        "clobbers": [
+            "PushNotification"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.3.2",
-    "cordova-plugin-neura": "0.0.3"
+    "cordova-plugin-neura": "0.0.3",
+    "phonegap-plugin-push": "1.8.1"
 };
 // BOTTOM OF METADATA
 });

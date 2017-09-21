@@ -12,6 +12,10 @@
         },
         "cordova-plugin-neura": {
             "PACKAGE_NAME": "com.neura.cordova.sample"
+        },
+        "phonegap-plugin-push": {
+            "SENDER_ID": "904777039558",
+            "PACKAGE_NAME": "com.neura.cordova.sample"
         }
     },
     "dependent_plugins": {}

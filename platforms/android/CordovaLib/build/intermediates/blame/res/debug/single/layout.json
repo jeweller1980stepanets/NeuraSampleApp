@@ -148,12 +148,12 @@
         "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/res/layout/notification_action.xml"
     },
     {
-        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/res/layout/abc_action_mode_close_item_material.xml"
-    },
-    {
         "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
         "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/design/25.3.0/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/layout/neura_sdk_activity_authentication2.xml",

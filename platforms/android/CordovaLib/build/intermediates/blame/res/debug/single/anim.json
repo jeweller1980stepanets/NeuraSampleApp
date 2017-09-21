@@ -48,12 +48,12 @@
         "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/res/anim/abc_slide_out_top.xml"
     },
     {
-        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
-        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/design/25.3.0/res/anim/design_snackbar_out.xml"
-    },
-    {
         "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
         "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
+        "source": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/exploded-aar/com.android.support/design/25.3.0/res/anim/design_snackbar_out.xml"
     },
     {
         "merged": "/Users/user/work/NEURA/NeuraSampleCordova/platforms/android/CordovaLib/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
