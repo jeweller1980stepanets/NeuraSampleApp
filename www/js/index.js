@@ -56,7 +56,7 @@ var authenticate = function() {
     // (replace APP_UID with your app UID):
     // https://dev.theneura.com/console/edit/APP_UID
     // Go to "Permissions", scroll all the way down and paste the list of permissions
-	neura.authenticate(["userLeftWork", "userLeftHome", "userPhoneNumber", "userDetails", "userSituation"],'+380935524937', success, failure);
+	neura.authenticate(["userLeftWork", "userLeftHome", "userPhoneNumber", "userDetails", "userSituation"],'', success, failure);
 }
 
 var registerNeuraEvents = function() {
