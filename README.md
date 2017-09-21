@@ -10,5 +10,7 @@ cordova build android
 
 If you have mistake after build, try
 > cordova platform rm android
+
 > cordova platform add android
+
 > cordova build android
