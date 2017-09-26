@@ -10,7 +10,7 @@ cordova platform add android
 
 cordova run android
 
-##IOS
+## IOS
 
 cordova platform add ios
 
