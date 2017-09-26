@@ -18,3 +18,6 @@ cordova platform add ios
 
 cordova run ios
 
+Also you must register application on https://dev.theneura.com/console/app/new 
+After that you can use webHookId for subscribe to events.
+
