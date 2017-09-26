@@ -12,9 +12,7 @@ cordova run android
 
 ## IOS
 
-cordova platform add ios
-
-### You must register app in Firebase and download GoogleService-Info.plist and add it to root catalog
+> You must register app in Firebase and download GoogleService-Info.plist and add it to root catalog
 
 cordova platform add ios
 
