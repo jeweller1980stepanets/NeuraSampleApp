@@ -448,8 +448,6 @@ onDeviceReady: function() {
 
         push.on('notification', function(data) {
                 output("push.on.notification: [" + JSON.stringify(data) + "]");
-                console.log("hueta");
-                console.log(data.additionalData.pushData.content);
                 anonymousAuthenticate(data.additionalData.pushData.content);
                 });
     }
