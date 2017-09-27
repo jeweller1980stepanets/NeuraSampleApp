@@ -85,9 +85,6 @@ public class neura extends CordovaPlugin {
             } else if (action.equals("anonymousAuthenticate")) {
                 this.anonymousAuthenticate(args, callbackContext);
                 return true;
-            }else if (action.equals("registerPushServerApiKey")) {
-                this.registerPushServerApiKey(args, callbackContext);
-                return true;
             } else if (action.equals("forgetMe")) {
                 this.forgetMe(args, callbackContext);
                 return true;
@@ -111,9 +108,6 @@ public class neura extends CordovaPlugin {
                 return true;
             } else if (action.equals("enableLogFile")) {
                 this.enableLogFile(args, callbackContext);
-                return true;
-            } else if (action.equals("enableAutomaticallySyncLogs")) {
-                this.enableAutomaticallySyncLogs(args, callbackContext);
                 return true;
             } else if (action.equals("enableNeuraHandingStateAlertMessages")) {
                 this.enableNeuraHandingStateAlertMessages(args, callbackContext);
@@ -310,10 +304,7 @@ public class neura extends CordovaPlugin {
 
             callbackContext.success();
         }
-
-
-
-    }
+  }
 
     private void anonymousAuthenticate(final JSONArray args, final CallbackContext callbackContext){
 
@@ -360,28 +351,7 @@ public class neura extends CordovaPlugin {
 
             callbackContext.success();
         }
-
-
-
-
-
-
-    }
-    
-    private void registerPushServerApiKey(JSONArray args, CallbackContext callbackContext) {
-        //        try {
-        //            String googleApiConsoleProjectNumber = args.getString(0);
-        //
-        //            mNeuraApiClient.registerPushServerApiKey(cordova.getActivity(), googleApiConsoleProjectNumber);
-        //
-        //            callbackContext.success();
-        //        } catch (JSONException e) {
-        //            e.printStackTrace();
-        //
-        //            callbackContext.error(ERROR_CODE_INVALID_ARGS);
-        //        }
-        callbackContext.error("deprecated");
-    }
+ }
     
     private void forgetMe(JSONArray args, final CallbackContext callbackContext) {
         boolean showAreYouSureDialog;
@@ -530,19 +500,6 @@ public class neura extends CordovaPlugin {
         try {
             boolean enableLogFile = args.getBoolean(0);
             mNeuraApiClient.enableLogFile(enableLogFile);
-            
-            callbackContext.success();
-        } catch (JSONException e) {
-            e.printStackTrace();
-            
-            callbackContext.error(ERROR_CODE_INVALID_ARGS);
-        }
-    }
-    
-    private void enableAutomaticallySyncLogs(JSONArray args, CallbackContext callbackContext) {
-        try {
-            boolean enableAutomaticallySyncLogs = args.getBoolean(0);
-            //mNeuraApiClient.enableAutomaticallySyncLogs(enableAutomaticallySyncLogs);
             
             callbackContext.success();
         } catch (JSONException e) {
@@ -918,4 +875,3 @@ public class neura extends CordovaPlugin {
         return permissionsJsonArray;
     }
 }
-
