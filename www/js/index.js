@@ -71,18 +71,6 @@ onDeviceReady: function() {
         neura.anonymousAuthenticate(deviceToken, success, failure);
     }
 
-    var registerNeuraEvents = function() {
-        var success = function() {
-            output('Neura registerPushServerApiKey success');
-        }
-
-        var failure = function(errorCode) {
-            output('Neura registerPushServerApiKey failed [' + errorCode + ']');
-        }
-
-        neura.registerPushServerApiKey("904777039558", success, failure);
-    }
-
     var forgetMe = function() {
         var success = function() {
             output('Neura logout success');
@@ -167,18 +155,6 @@ onDeviceReady: function() {
         neura.shouldSubscribeToEvent(eventName, success, failure);
     }
 
-    var registerPushServerApiKey = function(googleApiConsoleProjectNumber) {
-        var success = function() {
-            output('Neura registerPushServerApiKey success');
-        }
-
-        var failure = function(errorCode) {
-            output('Neura registerPushServerApiKey failed [' + errorCode + ']');
-        }
-
-        neura.registerPushServerApiKey(googleApiConsoleProjectNumber, success, failure);
-    }
-
     var getAppPermissions = function() {
         var success = function(permissions) {
             output('Neura getAppPermissions success [' + JSON.stringify(permissions) + ']');
@@ -213,18 +189,6 @@ onDeviceReady: function() {
         }
 
         neura.enableLogFile(true, success, failure);
-    }
-
-    var enableAutomaticallySyncLogs = function() {
-        var success = function() {
-            output('Neura enableAutomaticallySyncLogs success');
-        }
-
-        var failure = function(errorCode) {
-            output('Neura enableAutomaticallySyncLogs failed [' + errorCode + ']');
-        }
-
-        neura.enableAutomaticallySyncLogs(true, success, failure);
     }
 
     var enableNeuraHandingStateAlertMessages = function() {
@@ -409,7 +373,6 @@ onDeviceReady: function() {
     document.getElementById("getAppPermissions").addEventListener("click", getAppPermissions);
     document.getElementById("getPermissionStatus").addEventListener("click", getPermissionStatus);
     document.getElementById("enableLogFile").addEventListener("click", enableLogFile);
-    document.getElementById("enableAutomaticallySyncLogs").addEventListener("click", enableAutomaticallySyncLogs);
     document.getElementById("enableNeuraHandingStateAlertMessages").addEventListener("click", enableNeuraHandingStateAlertMessages);
     document.getElementById("getSdkVersion").addEventListener("click", getSdkVersion);
     document.getElementById("isMissingDataForEvent").addEventListener("click", isMissingDataForEvent);
@@ -439,7 +402,6 @@ onDeviceReady: function() {
         push.on('registration', function(data) {
                 output("push.on.registration: [" + data.registrationId + "]");
                anonymousAuthenticate(data.registrationId);
-                registerNeuraEvents();
                 });
 
         push.on('error', function(e) {
@@ -474,4 +436,3 @@ receivedEvent: function(id) {
 };
 
 app.initialize();
-
