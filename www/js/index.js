@@ -1,5 +1,4 @@
 
-
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -57,7 +56,19 @@ onDeviceReady: function() {
         // (replace APP_UID with your app UID):
         // https://dev.theneura.com/console/edit/APP_UID
         // Go to "Permissions", scroll all the way down and paste the list of permissions
-        neura.authenticate(["userLeftWork", "userLeftHome", "userPhoneNumber", "userDetails", "userSituation"],'', success, failure);
+
+        neura.authenticate(["userLeftWork", "userLeftHome", "userPhoneNumber", "userDetails", "userSituation"],"", success, failure);
+    }
+
+    var anonymousAuthenticate = function(deviceToken){
+        var success = function() {
+                    output('Neura authenticate success');
+                }
+
+                var failure = function(errorCode) {
+                    output('Neura authenticate failed [' + errorCode + ']');
+                }
+        neura.anonymousAuthenticate(deviceToken, success, failure);
     }
 
     var registerNeuraEvents = function() {
@@ -386,6 +397,7 @@ onDeviceReady: function() {
 
 
     document.getElementById("authenticate").addEventListener("click", authenticate);
+    document.getElementById("anonymousAuthenticate").addEventListener("click", anonymousAuthenticate);
     document.getElementById("forgetMe").addEventListener("click", forgetMe);
     document.getElementById("getSubscriptions").addEventListener("click", getSubscriptions);
     document.getElementById("subscribeLeftHome").addEventListener("click", subscribeLeftHome);
@@ -414,6 +426,7 @@ onDeviceReady: function() {
     document.getElementById("simulateAnEvent").addEventListener("click", simulateAnEvent);
 
 
+
     var success = function() {
         output('Neura init success');
 
@@ -425,6 +438,7 @@ onDeviceReady: function() {
 
         push.on('registration', function(data) {
                 output("push.on.registration: [" + data.registrationId + "]");
+               anonymousAuthenticate(data.registrationId);
                 registerNeuraEvents();
                 });
 
@@ -434,6 +448,9 @@ onDeviceReady: function() {
 
         push.on('notification', function(data) {
                 output("push.on.notification: [" + JSON.stringify(data) + "]");
+                console.log("hueta");
+                console.log(data.additionalData.pushData.content);
+                anonymousAuthenticate(data.additionalData.pushData.content);
                 });
     }
 
